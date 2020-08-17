@@ -68,6 +68,11 @@
             margin: 0 0 5px;
             color: #000;
         }
+		
+		.brsmall { 
+            display: block; 
+            margin-bottom: .5em; 
+        } 
 
         /* --- Zoom Home --- */
         .leaflet-bar a {
@@ -445,7 +450,7 @@
                 from, to;
 
 
-            div.innerHTML = '<FONT SIZE=2 style = "font-family:verdana"><b>Casos confirmados <br> por 10 mil habitantes</b><span><br></br> '; // Títulos da legenda
+            div.innerHTML = '<FONT SIZE=2 style = "font-family:verdana"><b>Casos confirmados <br> por 10 mil habitantes</b><span>  <span class="brsmall"></span> '; // Títulos da legenda
 
             for (var i = 0; i < grades.length; i++) {
                 div.innerHTML +=
