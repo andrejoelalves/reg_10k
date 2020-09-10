@@ -380,10 +380,9 @@
         return d > 70 ? '#4e004f' :
             d > 50 ? '#bf0000' :
                 d > 30 ? '#ed1111' :
-                    d > 25 ? '#ff781f' :
-                        d > 15 ? '#fac41b' :
-                            d > 7 ? '#ffe36e' :
-								d > 0 ? '#fceab3' :
+                    d > 15 ? '#fc8435' :
+                        d > 9 ? '#fac41b' :
+                            d > 0 ? '#ffe36e' :
 									d = 0 ? '#ededed' :
 										'#ededed';
     }
@@ -445,8 +444,8 @@
 
 
             var div = L.DomUtil.create('div', 'info legend'),
-                grades = [-1,-0.5, 7, 15, 25, 40, 50, 70],
-                labels = ['0','', '', '', '', '', '', '87'],
+                grades = [-1,-0.5, 9, 15, 30, 50, 70],
+                labels = ['0','', '', '', '', '', '87'],
                 from, to;
 
 
