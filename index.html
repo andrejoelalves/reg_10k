@@ -377,9 +377,9 @@
 
     // get color depending on population density value
     function getColor(d) {
-        return d > 70 ? '#4e004f' :
-            d > 55 ? '#bf0000' :
-                d > 40 ? '#ed1111' :
+        return d > 80 ? '#4e004f' :
+            d > 60 ? '#bf0000' :
+                d > 45 ? '#ed1111' :
                     d > 15 ? '#fc8435' :
                         d > 9 ? '#fac41b' :
                             d > 0 ? '#ffe36e' :
@@ -444,7 +444,7 @@
 
 
             var div = L.DomUtil.create('div', 'info legend'),
-                grades = [-1,-0.5, 9, 15, 40, 55, 70],
+                grades = [-1,-0.5, 9, 15, 45, 60, 80],
                 labels = ['0','', '', '', '', '', '126'],
                 from, to;
 
